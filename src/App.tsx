@@ -1,3 +1,4 @@
+import React from 'react';
 import { 
   ArrowUpRight, 
   Github, 
@@ -10,31 +11,39 @@ function App() {
   const projects = [
     {
       id: "01",
-      short: "YIELD-CALC",
-      title: "Yield Calculator",
-      description: "Automated material yield estimation, reducing calculation time by 75% and eliminating human error.",
-      tech: "REACT / FIREBASE",
-      link: "https://vulcan.ryandd.com",
+      short: "GRAPHICS-AUTO",
+      title: "CorelDraw Automation",
+      description: "Custom scripting to handle repetitive prepress tasks. Includes color palette conversion, scale checks, and instant PDF export.",
+      tech: "VBA / SCRIPTING",
+      link: "#",
       cols: "col-span-1"
     },
     {
       id: "02",
       short: "OSHA-AI",
-      title: "OSHA AI Generator",
-      description: "AI-powered compliance engine that generates vector-perfect safety signage from natural language prompts.",
+      title: "Signage Request App",
+      description: "An AI-powered compliance engine. Generates vector-perfect safety signage from natural language prompts for industrial use.",
       tech: "OPENAI / NEXT.JS",
       link: "https://signai.ryandd.com",
       cols: "col-span-1"
     },
     {
       id: "03",
-      short: "VULCAN-AUTO",
-      title: "Vulcan Automation",
-      description: "VBA scripting bridge between CorelDraw and Excel.",
-      tech: "VBA / SCRIPTING",
+      short: "LOCAL-TOOLS",
+      title: "React Reference Systems",
+      description: "Secure, localized calculators and database apps designed to replace dated paper-based reference materials.",
+      tech: "REACT / FIREBASE",
+      link: "https://calculator.ryandd.com",
+      cols: "col-span-1"
+    },
+    {
+      id: "04",
+      short: "PERSONAL-FINANCE",
+      title: "Beer Budget",
+      description: "A dedicated financial tracking tool built to manage craft beer expenses.",
+      tech: "REACT / ANALYTICS",
       link: "#",
-      cols: "col-span-1",
-      highlight: "$23k SAVINGS"
+      cols: "col-span-1"
     }
   ];
 
@@ -60,18 +69,19 @@ function App() {
           
           {/* 1. HERO SECTION */}
           <section>
-            {/* Typographic Tension: Dimmed connectors, Bright nouns */}
+            {/* Headline: High Contrast with Dimmed Punctuation */}
             <h1 className="text-5xl md:text-8xl font-bold leading-[0.9] tracking-tighter text-white mb-12 max-w-5xl">
-              <span className="text-zinc-500">Bridging the gap between</span> creative vision <span className="text-zinc-500">and</span> technical execution.
+              Designer<span className="text-zinc-600">.</span> Coder<span className="text-zinc-600">.</span> <br className="hidden md:block" />
+              Former Chef<span className="text-zinc-600">.</span>
             </h1>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-zinc-900 pt-8 max-w-4xl">
                <div className="text-base text-zinc-400 leading-relaxed">
                  <p>
-                    A Design Engineer specializing in <strong>System Architecture</strong>, <strong>React Automation</strong>, and rigorous <strong>UI Tooling</strong>. 
+                    My first build was a Dragon Ball Z polling site with inline styles. Today, I engineer React-based automation to modernize legacy industrial workflows. 
                  </p>
                  <p className="mt-4">
-                    I build high-performance interfaces and internal tools that save time, reduce error, and look good doing it.
+                    I build tools that make manual tasks obsolete.
                  </p>
                </div>
                
@@ -118,11 +128,6 @@ function App() {
                       <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-wider">
                         {project.tech}
                       </span>
-                      {project.highlight && (
-                        <span className="text-emerald-400 text-[10px] font-mono font-bold tracking-widest uppercase">
-                          {project.highlight}
-                        </span>
-                      )}
                    </div>
                  </div>
                </a>
