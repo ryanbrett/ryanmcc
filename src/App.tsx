@@ -71,7 +71,7 @@ function App() {
                     A Design Engineer specializing in <strong>System Architecture</strong>, <strong>React Automation</strong>, and rigorous <strong>UI Tooling</strong>. 
                  </p>
                  <p className="mt-4">
-                    I build high-performance interfaces and internal tools that save time, reduce error, and look good doing it.
+                    I build high-performance interfaces and internal tools that save time, reduce error, and keep aesthetics sharp.
                  </p>
                </div>
                
