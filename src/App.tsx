@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
   ArrowUpRight, 
   Github, 
@@ -141,5 +140,3 @@ export default function App() {
     </div>
   );
 }
-
-
