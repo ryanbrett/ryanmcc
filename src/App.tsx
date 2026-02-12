@@ -1,3 +1,4 @@
+import React from 'react';
 import { 
   ArrowUpRight, 
   Github, 
@@ -5,44 +6,38 @@ import {
   Mail
 } from 'lucide-react';
 
-function App() {
+export default function App() {
 
   const projects = [
     {
       id: "01",
-      short: "GRAPHICS-AUTO",
-      title: "CorelDraw Automation",
-      description: "Custom scripting to handle repetitive prepress tasks. Includes color palette conversion, scale checks, and instant PDF export.",
-      tech: "VBA / SCRIPTING",
-      link: "#",
+      short: "YIELD-CALC",
+      title: "React Yield Calculator",
+      //Reduces ERP part building time by 75% uing dynamic calculator that pulls ERP data and similair parts for reference.
+      description: "Reduces calculation time by 75% through automated material yield estimation.",
+      tech: "REACT / FIREBASE",
+      link: "https://yield.ryanmcc.dev",
       cols: "col-span-1"
     },
     {
       id: "02",
       short: "OSHA-AI",
-      title: "Signage Request App",
-      description: "An AI-powered compliance engine. Generates vector-perfect safety signage from natural language prompts for industrial use.",
+      title: "OSHA AI Generator",
+      description: "AI-powered compliance engine that generates vector-perfect safety signage from natural language prompts.",
       tech: "OPENAI / NEXT.JS",
-      link: "https://signai.ryandd.com",
+      link: "https://signai.ryanmcc.dev",
       cols: "col-span-1"
     },
     {
       id: "03",
-      short: "LOCAL-TOOLS",
-      title: "React Reference Systems",
-      description: "Secure, localized calculators and database apps designed to replace dated paper-based reference materials.",
-      tech: "REACT / FIREBASE",
-      link: "https://calculator.ryandd.com",
-      cols: "col-span-1"
-    },
-    {
-      id: "04",
-      short: "PERSONAL-FINANCE",
-      title: "Beer Budget",
-      description: "A dedicated financial tracking tool built to manage craft beer expenses.",
-      tech: "REACT / ANALYTICS",
+      short: "VULCAN-AUTO",
+      title: "Vulcan Automation",
+      //Add gifs for this section. Alt Text: "Automated PrePress workflows in CorelDraw and ERP data population in Excel via VBA scripting."
+      description: "Automated workflows in CorelDraw and in Excel via VBA scripting.",
+      tech: "VBA / SCRIPTING",
       link: "#",
-      cols: "col-span-1"
+      cols: "col-span-1",
+      highlight: "$23k SAVINGS"
     }
   ];
 
@@ -50,8 +45,8 @@ function App() {
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans selection:bg-white/20">
       <div className="max-w-6xl mx-auto px-6 py-12 md:py-24">
         
-        {/* HEADER / NAV */}
-        <header className="border-t border-zinc-800 pt-6 mb-32 grid grid-cols-2 gap-8 items-start">
+        {/* HEADER / NAV - No Top Border */}
+        <header className="mb-32 grid grid-cols-2 gap-8 items-start">
           <div>
              <div className="font-bold text-sm tracking-tight">Ryan McCullough</div>
           </div>
@@ -60,7 +55,7 @@ function App() {
           <div className="flex gap-6 justify-end text-zinc-500">
             <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors"><Github size={18} /></a>
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors"><Linkedin size={18} /></a>
-            <a href="mailto:ryan@ryandd.com" className="hover:text-white transition-colors"><Mail size={18} /></a>
+            <a href="mailto:ryanbmcc@gmail.com" className="hover:text-white transition-colors"><Mail size={18} /></a>
           </div>
         </header>
 
@@ -68,31 +63,25 @@ function App() {
           
           {/* 1. HERO SECTION */}
           <section>
-            {/* Headline: High Contrast with Dimmed Punctuation */}
-            <h1 className="text-5xl md:text-8xl font-bold leading-[0.9] tracking-tighter text-white mb-12 max-w-5xl">
-              Designer<span className="text-zinc-600">.</span> Coder<span className="text-zinc-600">.</span> <br className="hidden md:block" />
-              Former Chef<span className="text-zinc-600">.</span>
+            {/* H1 Identity - Bold, High Contrast White, Smaller */}
+            <h1 className="text-xl md:text-2xl font-bold text-white mb-6 tracking-tight">
+              GRAPHICS LEAD & DEVELOPER
             </h1>
+
+            {/* H2 Mission - Larger, fading at the dash */}
+            <h2 className="text-4xl md:text-4xl lg:text-6xl font-medium text-white leading-[1.1] max-w-5xl mb-12">
+              Building custom React apps and automation tools that transform complex design workflows<span className="text-zinc-500">—reducing errors and saving hundreds of hours.</span>
+            </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-zinc-900 pt-8 max-w-4xl">
-               <div className="text-base text-zinc-400 leading-relaxed">
-                 <p>
-                    My first build was a Dragon Ball Z polling site with inline styles. Today, I engineer React-based automation to modernize legacy industrial workflows. 
-                 </p>
-                 <p className="mt-4">
-                    I build tools that make manual tasks obsolete.
-                 </p>
-               </div>
-               
-               <div className="flex flex-col gap-4 items-start md:items-start md:pl-12">
-                  <button className="text-white border-b border-white pb-1 hover:text-zinc-400 hover:border-zinc-400 transition-all text-sm font-medium flex items-center gap-2 group">
-                    View Case Studies 
-                    <ArrowUpRight size={14} className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform"/>
-                  </button>
-                  <button className="text-zinc-500 hover:text-white transition-colors text-sm font-medium">
-                    Download Resume
-                  </button>
-               </div>
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-8 items-start pt-4">
+               <button className="text-white border-b border-white pb-1 hover:text-zinc-400 hover:border-zinc-400 transition-all text-sm font-medium flex items-center gap-2 group">
+                 View Case Studies 
+                 <ArrowUpRight size={14} className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform"/>
+               </button>
+               <button className="text-zinc-500 hover:text-white transition-colors text-sm font-medium pt-1">
+                 Download Resume
+               </button>
             </div>
           </section>
 
@@ -127,6 +116,11 @@ function App() {
                       <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-wider">
                         {project.tech}
                       </span>
+                      {project.highlight && (
+                        <span className="text-emerald-400 text-[10px] font-mono font-bold tracking-widest uppercase">
+                          {project.highlight}
+                        </span>
+                      )}
                    </div>
                  </div>
                </a>
@@ -148,4 +142,4 @@ function App() {
   );
 }
 
-export default App;
+
