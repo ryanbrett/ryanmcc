@@ -63,12 +63,12 @@ export default function App() {
           {/* 1. HERO SECTION */}
           <section>
             {/* H1 Identity - Bold, High Contrast White, Smaller */}
-            <h1 className="text-xl md:text-2xl font-bold text-white mb-6 tracking-tight">
+            <h1 className="text-xl font-bold text-white mb-6 tracking-tight">
               GRAPHICS LEAD & DEVELOPER
             </h1>
 
             {/* H2 Mission - Larger, fading at the dash */}
-            <h2 className="text-3xl md:text-3xl lg:text-6xl font-medium text-white leading-[1.1] max-w-5xl mb-12">
+            <h2 className="text-2xl md:text-3xl font-medium text-white leading-[1.1] max-w-5xl mb-12">
               Building custom React apps and automation tools that transform complex design workflows<span className="text-zinc-500">—reducing errors and saving hundreds of hours.</span>
             </h2>
             
