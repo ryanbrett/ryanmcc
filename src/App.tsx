@@ -41,10 +41,10 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans selection:bg-white/20">
-      <div className="max-w-6xl mx-auto px-6 py-12 md:py-12">
+      <div className="max-w-6xl mx-auto px-6 pt-6 pb-24">
         
-        {/* HEADER / NAV - No Border */}
-        <header className="mb-32 grid grid-cols-2 gap-8 items-start">
+        {/* HEADER / NAV - Spacing set to 144px (Fibonacci) */}
+        <header className="mb-36 grid grid-cols-2 gap-8 items-start">
           <div>
              <div className="font-bold text-sm tracking-tight">Ryan McCullough</div>
           </div>
@@ -56,23 +56,31 @@ export default function App() {
           </div>
         </header>
 
-        <main className="space-y-32">
+        {/* Spacing set to 144px (Fibonacci) */}
+        <main className="space-y-36">
           
-          {/* 1. HERO SECTION - No Border */}
+          {/* 1. HERO SECTION */}
           <section>
-            <h1 className="text-5xl md:text-8xl font-bold leading-[0.9] tracking-tighter text-white mb-12 max-w-5xl flex flex-wrap items-center gap-x-4">
+            <h1 className="text-5xl md:text-8xl font-bold leading-[0.9] tracking-tighter text-white mb-14 max-w-5xl flex flex-wrap items-center gap-x-4">
               <span>GRAPHIC DESIGNER WHO</span>
               {/* SVG Heart - Scaled to match text size */}
               <Heart 
-                className="inline-block text-red-500 animate-pulse w-12 h-12 md:w-20 md:h-20" 
+                className="inline-block text-red-500 animate-pulse w-12 h-12 md:w-24 md:h-24" 
                 fill="currentColor" 
                 strokeWidth={0}
               />
-              <span>'S TO CODE</span>
+              <span>TO CODE</span>
             </h1>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 border-zinc-900 pt-8 max-w-4xl">
-               <div className="text-base text-zinc-400 leading-relaxed">
+            {/* Swiss Grid Adjustment:
+              Switched from symmetric grid-cols-2 to asymmetric grid-cols-12.
+              Text spans 7 cols, Buttons span 5 cols.
+              This creates a ~1.4 ratio, approaching the Golden Ratio (1.618).
+              Removed border and padding-top to clean up lines.
+              Gap set to 56px (Fibonacci 55 approximation).
+            */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-14 max-w-4xl">
+               <div className="md:col-span-7 text-base text-zinc-400 leading-relaxed">
                  <p>
                     A Design Engineer specializing in <strong>System Architecture</strong>, <strong>React Automation</strong>, and rigorous <strong>UI Tooling</strong>. 
                  </p>
@@ -81,7 +89,7 @@ export default function App() {
                  </p>
                </div>
                
-               <div className="flex flex-col gap-4 items-start md:items-start md:pl-12">
+               <div className="md:col-span-5 flex flex-col gap-4 items-start md:items-start md:pl-4">
                   <button className="text-white border-b border-white pb-1 hover:text-zinc-400 hover:border-zinc-400 transition-all text-sm font-medium flex items-center gap-2 group">
                     View Case Studies 
                     <ArrowUpRight size={14} className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform"/>
@@ -93,7 +101,7 @@ export default function App() {
             </div>
           </section>
 
-          {/* 2. THE WORK - Cards have borders, but container does not */}
+          {/* 2. THE WORK */}
           <section className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
             
             {projects.map((project) => (
