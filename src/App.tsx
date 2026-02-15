@@ -2,7 +2,8 @@ import {
   ArrowUpRight, 
   Github, 
   Linkedin, 
-  Mail
+  Mail,
+  Heart
 } from 'lucide-react';
 
 export default function App() {
@@ -11,11 +12,10 @@ export default function App() {
     {
       id: "01",
       short: "YIELD-CALC",
-      title: "React Yield Calculator",
-      //Reduces ERP part building time by 75% uing dynamic calculator that pulls ERP data and similair parts for reference.
-      description: "Reduces calculation time by 75% through automated material yield estimation.",
+      title: "Yield Calculator",
+      description: "Automated material yield estimation, reducing calculation time by 75% and eliminating human error.",
       tech: "REACT / FIREBASE",
-      link: "https://yield.ryanmcc.dev",
+      link: "https://vulcan.ryandd.com",
       cols: "col-span-1"
     },
     {
@@ -24,15 +24,14 @@ export default function App() {
       title: "OSHA AI Generator",
       description: "AI-powered compliance engine that generates vector-perfect safety signage from natural language prompts.",
       tech: "OPENAI / NEXT.JS",
-      link: "https://signai.ryanmcc.dev",
+      link: "https://signai.ryandd.com",
       cols: "col-span-1"
     },
     {
       id: "03",
       short: "VULCAN-AUTO",
       title: "Vulcan Automation",
-      //Add gifs for this section. Alt Text: "Automated PrePress workflows in CorelDraw and ERP data population in Excel via VBA scripting."
-      description: "Automated workflows in CorelDraw and in Excel via VBA scripting.",
+      description: "VBA scripting bridge between CorelDraw and Excel.",
       tech: "VBA / SCRIPTING",
       link: "#",
       cols: "col-span-1",
@@ -42,55 +41,65 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans selection:bg-white/20">
-      <div className="max-w-6xl mx-auto px-6 py-12 md:py-24">
+      <div className="max-w-6xl mx-auto px-6 py-12 md:py-12">
         
-        {/* HEADER / NAV - No Top Border */}
+        {/* HEADER / NAV - No Border */}
         <header className="mb-32 grid grid-cols-2 gap-8 items-start">
           <div>
              <div className="font-bold text-sm tracking-tight">Ryan McCullough</div>
           </div>
           
-          {/* Socials - Simple and Right Aligned */}
           <div className="flex gap-6 justify-end text-zinc-500">
             <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors"><Github size={18} /></a>
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors"><Linkedin size={18} /></a>
-            <a href="mailto:ryanbmcc@gmail.com" className="hover:text-white transition-colors"><Mail size={18} /></a>
+            <a href="mailto:ryan@ryandd.com" className="hover:text-white transition-colors"><Mail size={18} /></a>
           </div>
         </header>
 
         <main className="space-y-32">
           
-          {/* 1. HERO SECTION */}
+          {/* 1. HERO SECTION - No Border */}
           <section>
-            {/* H1 Identity - Bold, High Contrast White, Smaller */}
-            <h1 className="text-xl font-bold text-white mb-6 tracking-tight">
-              GRAPHICS LEAD & DEVELOPER
+            <h1 className="text-5xl md:text-8xl font-bold leading-[0.9] tracking-tighter text-white mb-12 max-w-5xl flex flex-wrap items-center gap-x-4">
+              <span>GRAPHIC DESIGNER WHO</span>
+              {/* SVG Heart - Scaled to match text size */}
+              <Heart 
+                className="inline-block text-red-500 animate-pulse w-12 h-12 md:w-20 md:h-20" 
+                fill="currentColor" 
+                strokeWidth={0}
+              />
+              <span>'S TO CODE</span>
             </h1>
-
-            {/* H2 Mission - Larger, fading at the dash */}
-            <h2 className="text-2xl md:text-3xl font-medium text-white leading-[1.1] max-w-5xl mb-12">
-              Building custom React apps and automation tools that transform complex design workflows<span className="text-zinc-500">—reducing errors and saving hundreds of hours.</span>
-            </h2>
             
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-8 items-start pt-4">
-               <button className="text-white border-b border-white pb-1 hover:text-zinc-400 hover:border-zinc-400 transition-all text-sm font-medium flex items-center gap-2 group">
-                 View Case Studies 
-                 <ArrowUpRight size={14} className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform"/>
-               </button>
-               <button className="text-zinc-500 hover:text-white transition-colors text-sm font-medium pt-1">
-                 Download Resume
-               </button>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 border-zinc-900 pt-8 max-w-4xl">
+               <div className="text-base text-zinc-400 leading-relaxed">
+                 <p>
+                    A Design Engineer specializing in <strong>System Architecture</strong>, <strong>React Automation</strong>, and rigorous <strong>UI Tooling</strong>. 
+                 </p>
+                 <p className="mt-4">
+                    I build high-performance interfaces and internal tools that save time, reduce error, and look good doing it.
+                 </p>
+               </div>
+               
+               <div className="flex flex-col gap-4 items-start md:items-start md:pl-12">
+                  <button className="text-white border-b border-white pb-1 hover:text-zinc-400 hover:border-zinc-400 transition-all text-sm font-medium flex items-center gap-2 group">
+                    View Case Studies 
+                    <ArrowUpRight size={14} className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform"/>
+                  </button>
+                  <button className="text-zinc-500 hover:text-white transition-colors text-sm font-medium">
+                    Download Resume
+                  </button>
+               </div>
             </div>
           </section>
 
-          {/* 2. THE WORK */}
+          {/* 2. THE WORK - Cards have borders, but container does not */}
           <section className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
             
             {projects.map((project) => (
                <a href={project.link} key={project.id} className="group relative border-t border-zinc-800 pt-6 hover:border-zinc-500 transition-colors duration-500 block h-full">
                  
-                 {/* Spec Sheet Header */}
+                 {/* Header */}
                  <div className="flex justify-between items-start mb-12">
                     <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <ArrowUpRight className="text-white" size={20} />
