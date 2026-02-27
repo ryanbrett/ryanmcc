@@ -15,7 +15,7 @@ export default function App() {
       title: "Yield Calculator",
       description: "Automated material yield estimation, reducing calculation time by 75% and eliminating human error.",
       tech: "REACT / FIREBASE",
-      link: "https://vulcan.ryandd.com",
+      link: "https://yield.ryanmccullough.dev",
       cols: "col-span-1"
     },
     {
@@ -24,16 +24,16 @@ export default function App() {
       title: "OSHA AI Generator",
       description: "AI-powered compliance engine that generates vector-perfect safety signage from natural language prompts.",
       tech: "OPENAI / NEXT.JS",
-      link: "https://signai.ryandd.com",
+      link: "https://signai.ryanmccullough.dev",
       cols: "col-span-1"
     },
     {
       id: "03",
       short: "VULCAN-AUTO",
-      title: "Vulcan Automation",
+      title: "Graphics and Prepress Automation",
       description: "VBA scripting bridge between CorelDraw and Excel.",
       tech: "VBA / SCRIPTING",
-      link: "#",
+      link: "https://auto.ryanmccullough.dev",
       cols: "col-span-1",
       highlight: "$23k SAVINGS"
     }
@@ -61,14 +61,17 @@ export default function App() {
           
           {/* 1. HERO SECTION */}
           <section>
-            <h1 className="text-5xl md:text-8xl font-bold leading-[0.9] tracking-tighter text-white mb-14 max-w-5xl flex flex-wrap items-center gap-x-4">
+            <h1 className="text-5xl md:text-8xl font-bold leading-[0.9] tracking-tighter text-white mb-14 max-w-[830px] flex flex-wrap items-center gap-x-4">
               <span>GRAPHIC DESIGNER WHO</span>
-              {/* SVG Heart - Scaled to match text size */}
-              <Heart 
-                className="inline-block text-red-500 animate-pulse w-12 h-12 md:w-24 md:h-24" 
-                fill="currentColor" 
-                strokeWidth={0}
-              />
+              {/* SVG Heart with Stylized 's */}
+              <span className="flex items-end">
+                <Heart 
+                  className="inline-block text-red-500 animate-pulse w-12 h-12 md:w-24 md:h-24" 
+                  fill="currentColor" 
+                  strokeWidth={0}
+                />
+                <span className="text-red-500 font-serif italic text-4xl md:text-5xl -ml-1 md:-ml-3 mb-1 md:mb-8 animate-pulse">'s</span>
+              </span>
               <span>TO CODE</span>
             </h1>
             
