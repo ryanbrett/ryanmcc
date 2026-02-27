@@ -193,7 +193,7 @@ export default function App() {
           <div className="flex gap-6 justify-end text-zinc-500">
             <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors"><Github size={18} /></a>
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors"><Linkedin size={18} /></a>
-            <a href="mailto:ryan@ryandd.com" className="hover:text-white transition-colors"><Mail size={18} /></a>
+            <a href="mailto:ryanbmcc@gmail.com" className="hover:text-white transition-colors"><Mail size={18} /></a>
           </div>
         </header>
 
