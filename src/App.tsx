@@ -12,7 +12,7 @@ export default function App() {
     {
       id: "01",
       short: "YIELD-CALC",
-      title: "Yield Calculate and Search",
+      title: "Yield Calculator",
       description: "Automated material yield estimation. Calculates and auto-searches real-world ERP data for matching part references, reducing calculation time by 75%.",
       tech: "REACT / FIREBASE",
       link: "https://calc.ryanmccullough.dev",
@@ -29,7 +29,7 @@ export default function App() {
     },
     {
       id: "03",
-      short: "AUTO-MACROS",
+      short: "VULCAN-AUTO",
       title: "Graphics and Prepress Automation",
       description: "VBA scripting to automate CorelDraw graphics manipulation and print-ready prepress tasks, alongside Excel scripts for mass data manipulation.",
       tech: "VBA / SCRIPTING",
@@ -85,10 +85,10 @@ export default function App() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-14 max-w-4xl">
                <div className="md:col-span-7 text-base text-zinc-400 leading-relaxed">
                  <p>
-                    A Design Engineer specializing in <strong>System Architecture</strong>, <strong>React Automation</strong>, and rigorous <strong>UI Tooling</strong>. 
+                    Graphics Department Lead specializing in <strong>Workflow Automation</strong>, <strong>React Development</strong>, and <strong>Industrial Design</strong>.
                  </p>
                  <p className="mt-4">
-                    I build high-performance interfaces and internal tools that save time, reduce error, and look good doing it.
+                    I build secure internal apps and automation tools that streamline production—saving time and reducing error.
                  </p>
                </div>
                
