@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   ArrowUpRight, 
   Github, 
@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 
 // --- CASE STUDY COMPONENT (TECHNICAL MANUAL) ---
-function VulcanCaseStudy({ onBack }) {
+function VulcanCaseStudy({ onBack }: { onBack: () => void }) {
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans selection:bg-white/20 animate-in fade-in duration-500">
       <div className="max-w-[1200px] mx-auto px-6 py-12 md:py-24">
