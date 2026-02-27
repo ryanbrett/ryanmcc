@@ -12,10 +12,10 @@ export default function App() {
     {
       id: "01",
       short: "YIELD-CALC",
-      title: "Yield Calculator",
-      description: "Automated material yield estimation, reducing calculation time by 75% and eliminating human error.",
+      title: "Yield Calculate and Search",
+      description: "Automated material yield estimation. Calculates and auto-searches real-world ERP data for matching part references, reducing calculation time by 75%.",
       tech: "REACT / FIREBASE",
-      link: "https://yield.ryanmccullough.dev",
+      link: "https://calc.ryanmccullough.dev",
       cols: "col-span-1"
     },
     {
@@ -29,9 +29,9 @@ export default function App() {
     },
     {
       id: "03",
-      short: "VULCAN-AUTO",
+      short: "AUTO-MACROS",
       title: "Graphics and Prepress Automation",
-      description: "VBA scripting bridge between CorelDraw and Excel.",
+      description: "VBA scripting to automate CorelDraw graphics manipulation and print-ready prepress tasks, alongside Excel scripts for mass data manipulation.",
       tech: "VBA / SCRIPTING",
       link: "https://auto.ryanmccullough.dev",
       cols: "col-span-1",
