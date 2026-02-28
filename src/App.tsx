@@ -319,14 +319,14 @@ export default function App() {
                <div className="md:col-span-5 flex flex-col gap-4 items-start md:items-start md:pl-4">
                   <button 
                     onClick={scrollToCases}
-                    className="text-white border-b border-white pb-1 hover:text-zinc-400 hover:border-zinc-400 transition-all text-sm font-medium flex items-center gap-2 group"
+                    className="text-white border-b border-white pb-1 hover:text-zinc-400 hover:border-zinc-400 transition-all text-sm font-medium flex items-center gap-2 group cursor-pointer"
                   >
                     View Case Studies 
                     <ArrowUpRight size={14} className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform"/>
                   </button>
                   <button 
                     onClick={() => setCurrentView('experience')}
-                    className="text-zinc-500 hover:text-white transition-colors text-sm font-medium"
+                    className="text-zinc-500 hover:text-white transition-colors text-sm font-medium cursor-pointer"
                   >
                     Experience & Stack
                   </button>
