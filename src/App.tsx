@@ -157,7 +157,27 @@ function VulcanCaseStudy({ onBack }: { onBack: () => void }) {
           </div>
 
           <div className="md:col-span-7 md:col-start-6 space-y-24">
-             
+
+             <div>
+                <div className="font-mono text-[10px] text-zinc-500 tracking-widest uppercase mb-4 flex gap-4">
+                  <span>Fig 3.0</span>
+                  <span className="text-zinc-300">EXCEL DATA SYNC</span>
+                </div>
+                <div className="w-full aspect-video bg-zinc-900 border border-zinc-800 rounded-sm overflow-hidden relative group cursor-crosshair">
+                   <video 
+                     autoPlay loop muted playsInline 
+                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
+                     src="/videos/Trimmed-CorelDraw-Sign-Builder-Recording-2026-03-13 144615.mp4" <-- Placeholder logic applied
+                   />
+                   <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-500 pointer-events-none">
+                     <span className="font-mono text-xs text-zinc-600 uppercase tracking-widest bg-zinc-950/80 px-4 py-2 rounded-full border border-zinc-800">Video Signal Offline</span>
+                   </div>
+                </div>
+                <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
+                  Stock and custom sign builder from code. Auto generated sign drawing templates.
+                </p>
+             </div>
+            
              <div>
                 <div className="font-mono text-[10px] text-zinc-500 tracking-widest uppercase mb-4 flex gap-4">
                   <span>Fig 1.0</span>
@@ -195,26 +215,6 @@ function VulcanCaseStudy({ onBack }: { onBack: () => void }) {
                 </div>
                 <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
                   One-click generation of print-ready PDF files. Bypasses manual export dialogues and standardizes bleed, crop, and output settings.
-                </p>
-             </div>
-
-             <div>
-                <div className="font-mono text-[10px] text-zinc-500 tracking-widest uppercase mb-4 flex gap-4">
-                  <span>Fig 3.0</span>
-                  <span className="text-zinc-300">EXCEL DATA SYNC</span>
-                </div>
-                <div className="w-full aspect-video bg-zinc-900 border border-zinc-800 rounded-sm overflow-hidden relative group cursor-crosshair">
-                   <video 
-                     autoPlay loop muted playsInline 
-                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
-                     // src="/videos/data-sync.mp4" <-- Placeholder logic applied
-                   />
-                   <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-500 pointer-events-none">
-                     <span className="font-mono text-xs text-zinc-600 uppercase tracking-widest bg-zinc-950/80 px-4 py-2 rounded-full border border-zinc-800">Video Signal Offline</span>
-                   </div>
-                </div>
-                <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
-                  Bidirectional data flow. Automatically updates job statuses and logs material usage directly back to the master production tracking spreadsheet.
                 </p>
              </div>
           </div>
