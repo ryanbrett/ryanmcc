@@ -167,7 +167,7 @@ function VulcanCaseStudy({ onBack }: { onBack: () => void }) {
                    <video 
                      autoPlay loop muted playsInline 
                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
-                     src="/videos/Trimmed-CorelDraw-Sign-Builder-Recording-2026-03-13 144615.mp4" <-- Placeholder logic applied
+                     //src="/videos/Trimmed-CorelDraw-Sign-Builder-Recording-2026-03-13 144615.mp4" <-- Placeholder logic applied
                    />
                    <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-500 pointer-events-none">
                      <span className="font-mono text-xs text-zinc-600 uppercase tracking-widest bg-zinc-950/80 px-4 py-2 rounded-full border border-zinc-800">Video Signal Offline</span>
