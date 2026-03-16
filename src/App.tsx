@@ -161,8 +161,26 @@ function VulcanCaseStudy({ onBack }: { onBack: () => void }) {
              <div>
                 <div className="font-mono text-[10px] text-zinc-500 tracking-widest uppercase mb-4 flex gap-4">
                   <span>Fig 3.0</span>
-                  <span className="text-zinc-300">EXCEL DATA SYNC</span>
+                  <span className="text-zinc-300">VECTOR SIGN BUILDER</span>
                 </div>
+                <div className="w-full aspect-video bg-zinc-900 border border-zinc-800 rounded-sm overflow-hidden relative group cursor-crosshair">
+                   <video 
+                    autoPlay loop muted playsInline 
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
+                    src="/videos/sign-builder.mp4"
+                  />
+                </div>
+                <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
+                  Automated 'Sign Builder' macro that generates stock and custom sign templates directly from code. It eliminates manual drafting, reducing production time by up to 94%—turning a 5-minute complex drawing task into a 16-second automated workflow.
+                </p>
+             </div>
+            
+             <div>
+                <div className="font-mono text-[10px] text-zinc-500 tracking-widest uppercase mb-4 flex gap-4">
+                  <span>Fig 1.0</span>
+                  <span className="text-zinc-300">BATCH COLOR CONVERSION</span>
+                </div>
+ 
                 <div className="w-full aspect-video bg-zinc-900 border border-zinc-800 rounded-sm overflow-hidden relative group cursor-crosshair">
                    <video 
                      autoPlay loop muted playsInline 
@@ -172,23 +190,6 @@ function VulcanCaseStudy({ onBack }: { onBack: () => void }) {
                    <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-500 pointer-events-none">
                      <span className="font-mono text-xs text-zinc-600 uppercase tracking-widest bg-zinc-950/80 px-4 py-2 rounded-full border border-zinc-800">Video Signal Offline</span>
                    </div>
-                </div>
-                <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
-                  Stock and custom sign builder from code. Auto generated sign drawing templates.
-                </p>
-             </div>
-            
-             <div>
-                <div className="font-mono text-[10px] text-zinc-500 tracking-widest uppercase mb-4 flex gap-4">
-                  <span>Fig 1.0</span>
-                  <span className="text-zinc-300">BATCH COLOR CONVERSION</span>
-                </div>
-                <div className="w-full aspect-video bg-zinc-900 border border-zinc-800 rounded-sm overflow-hidden relative group cursor-crosshair">
- <video 
-  autoPlay loop muted playsInline 
-  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
-  src="/videos/sign-builder.mp4"
-/>
                 </div>
                 <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
                   Automated parsing of vector objects to convert customer color profiles to strict internal print standards. Eliminates manual swatch replacement.
