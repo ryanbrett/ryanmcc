@@ -185,11 +185,8 @@ function VulcanCaseStudy({ onBack }: { onBack: () => void }) {
                    <video 
                      autoPlay loop muted playsInline 
                      className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
-                     //src="/videos/Trimmed-CorelDraw-Sign-Builder-Recording-2026-03-13 144615.mp4" <-- Placeholder logic applied
+                     src="/videos/graphics-tool-color.mp4"
                    />
-                   <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-500 pointer-events-none">
-                     <span className="font-mono text-xs text-zinc-600 uppercase tracking-widest bg-zinc-950/80 px-4 py-2 rounded-full border border-zinc-800">Video Signal Offline</span>
-                   </div>
                 </div>
                 <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
                   Automated parsing of vector objects to convert customer color profiles to strict internal print standards. Eliminates manual swatch replacement.
@@ -199,13 +196,30 @@ function VulcanCaseStudy({ onBack }: { onBack: () => void }) {
              <div>
                 <div className="font-mono text-[10px] text-zinc-500 tracking-widest uppercase mb-4 flex gap-4">
                   <span>Fig 2.0</span>
+                  <span className="text-zinc-300">LEGACY FONT KILLER</span>
+                </div>
+                <div className="w-full aspect-video bg-zinc-900 border border-zinc-800 rounded-sm overflow-hidden relative group cursor-crosshair">
+                   <video 
+                     autoPlay loop muted playsInline 
+                     className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
+                     src="/videos/graphics-tool-font-killer.mp4"
+                   />
+                </div>
+                <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
+                  Scans and replaces non-standard or legacy Type 1 fonts with brand-compliant alternatives. Automatically corrects transformations to eliminate stretched or squished typography while maintaining original coordinates and scale.
+                </p>
+             </div>
+
+             <div>
+                <div className="font-mono text-[10px] text-zinc-500 tracking-widest uppercase mb-4 flex gap-4">
+                  <span>Fig 2.0</span>
                   <span className="text-zinc-300">AUTOMATED PREPRESS RIP</span>
                 </div>
                 <div className="w-full aspect-video bg-zinc-900 border border-zinc-800 rounded-sm overflow-hidden relative group cursor-crosshair">
                    <video 
                      autoPlay loop muted playsInline 
                      className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
-                     // src="/videos/prepress-rip.mp4" <-- Placeholder logic applied
+                     //src="/videos/prepress-rip.mp4" <-- Placeholder logic applied
                    />
                    <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-500 pointer-events-none">
                      <span className="font-mono text-xs text-zinc-600 uppercase tracking-widest bg-zinc-950/80 px-4 py-2 rounded-full border border-zinc-800">Video Signal Offline</span>
@@ -215,6 +229,7 @@ function VulcanCaseStudy({ onBack }: { onBack: () => void }) {
                   One-click generation of print-ready PDF files. Bypasses manual export dialogues and standardizes bleed, crop, and output settings.
                 </p>
              </div>
+               
           </div>
         </div>
         
@@ -388,6 +403,7 @@ export default function App() {
              <span>React</span>
              <span>Tailwind</span>
              <span>Vite</span>
+            <span>Graphics</span>
           </div>
         </footer>
 
