@@ -166,7 +166,7 @@ function VulcanCaseStudy({ onBack }: { onBack: () => void }) {
                 <div className="w-full aspect-video bg-zinc-900 border border-zinc-800 rounded-sm overflow-hidden relative group cursor-crosshair">
                    <video 
                     autoPlay loop muted playsInline 
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
+                    className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
                     src="/videos/sign-builder.mp4"
                   />
                 </div>
@@ -184,7 +184,7 @@ function VulcanCaseStudy({ onBack }: { onBack: () => void }) {
                 <div className="w-full aspect-video bg-zinc-900 border border-zinc-800 rounded-sm overflow-hidden relative group cursor-crosshair">
                    <video 
                      autoPlay loop muted playsInline 
-                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
+                     className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
                      //src="/videos/Trimmed-CorelDraw-Sign-Builder-Recording-2026-03-13 144615.mp4" <-- Placeholder logic applied
                    />
                    <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-500 pointer-events-none">
@@ -204,7 +204,7 @@ function VulcanCaseStudy({ onBack }: { onBack: () => void }) {
                 <div className="w-full aspect-video bg-zinc-900 border border-zinc-800 rounded-sm overflow-hidden relative group cursor-crosshair">
                    <video 
                      autoPlay loop muted playsInline 
-                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
+                     className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-100"
                      // src="/videos/prepress-rip.mp4" <-- Placeholder logic applied
                    />
                    <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-500 pointer-events-none">
