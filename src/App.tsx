@@ -254,10 +254,10 @@ export default function App() {
     {
       id: "01",
       short: "YIELD-CALC",
-      title: "Yield Calculator",
-      description: "Automated material yield estimation. Calculates and auto-searches real-world ERP data for matching part references, reducing calculation time by 75%.",
+      title: "Industrial Production Hub",
+      description: "Standard Procedures: Calculates and auto-searches ERP data for matching part references. Image Analyzer: Evaluates quality of image/PDF and rates printability. Resources: Centralized operational resources.",
       tech: "REACT / FIREBASE",
-      link: "https://calc.ryanmccullough.dev",
+      link: "https://hub.ryanmccullough.dev",
       internalRoute: null,
       cols: "col-span-1"
     },
